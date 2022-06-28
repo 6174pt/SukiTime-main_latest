@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		550A0B7A26D8C7FA0056536D /* SukimaTimeTabaBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A0B7926D8C7FA0056536D /* SukimaTimeTabaBarController.swift */; };
+		5512522626B9547300F3E455 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512522526B9547300F3E455 /* EndViewController.swift */; };
+		556677612711AD6500B5ABE2 /* ToDoTVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556677602711AD6500B5ABE2 /* ToDoTVCTableViewCell.swift */; };
+		556677662711AD9300B5ABE2 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556677652711AD9300B5ABE2 /* ListViewController.swift */; };
+		5566776B2711B77300B5ABE2 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566776A2711B77300B5ABE2 /* ContainerViewController.swift */; };
+		556D248D278D91DE00B577E6 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D248C278D91DE00B577E6 /* CarouselView.swift */; };
+		556D2492278D923F00B577E6 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D2491278D923F00B577E6 /* CarouselCell.swift */; };
+		556D249A278DA03A00B577E6 /* PagingPerCellFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D2499278DA03A00B577E6 /* PagingPerCellFlowLayout.swift */; };
+		557529E826AEF85900D38365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557529E726AEF85900D38365 /* AppDelegate.swift */; };
+		557529EA26AEF85900D38365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557529E926AEF85900D38365 /* SceneDelegate.swift */; };
+		557529EC26AEF85900D38365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557529EB26AEF85900D38365 /* ViewController.swift */; };
+		557529EF26AEF85900D38365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557529ED26AEF85900D38365 /* Main.storyboard */; };
+		557529F126AEF85B00D38365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557529F026AEF85B00D38365 /* Assets.xcassets */; };
+		557529F426AEF85B00D38365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557529F226AEF85B00D38365 /* LaunchScreen.storyboard */; };
+		557529FF26AEF85C00D38365 /* SukimaTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557529FE26AEF85C00D38365 /* SukimaTimeTests.swift */; };
+		55752A0A26AEF85C00D38365 /* SukimaTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55752A0926AEF85C00D38365 /* SukimaTimeUITests.swift */; };
+		55752A1B26AEF99600D38365 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55752A1A26AEF99600D38365 /* ToDoViewController.swift */; };
+		55752A2026AEFD5F00D38365 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55752A1F26AEFD5F00D38365 /* SelectViewController.swift */; };
+		55752A2526AEFFC300D38365 /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55752A2426AEFFC300D38365 /* SuggestionViewController.swift */; };
+		55752A3226B00AE500D38365 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55752A3126B00AE500D38365 /* RunViewController.swift */; };
+		5592A2AD26FB2042009DD014 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5592A2AC26FB2042009DD014 /* Color.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		557529FB26AEF85C00D38365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 557529DC26AEF85900D38365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557529E326AEF85900D38365;
+			remoteInfo = SukimaTime;
+		};
+		55752A0626AEF85C00D38365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 557529DC26AEF85900D38365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557529E326AEF85900D38365;
+			remoteInfo = SukimaTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		550A0B7926D8C7FA0056536D /* SukimaTimeTabaBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SukimaTimeTabaBarController.swift; sourceTree = "<group>"; };
+		5512522526B9547300F3E455 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		556677602711AD6500B5ABE2 /* ToDoTVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTVCTableViewCell.swift; sourceTree = "<group>"; };
+		556677652711AD9300B5ABE2 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		5566776A2711B77300B5ABE2 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		556D248C278D91DE00B577E6 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		556D2491278D923F00B577E6 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
+		556D2499278DA03A00B577E6 /* PagingPerCellFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingPerCellFlowLayout.swift; sourceTree = "<group>"; };
+		557529E426AEF85900D38365 /* SukimaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SukimaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		557529E726AEF85900D38365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		557529E926AEF85900D38365 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		557529EB26AEF85900D38365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		557529EE26AEF85900D38365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		557529F026AEF85B00D38365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		557529F326AEF85B00D38365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		557529F526AEF85B00D38365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557529FA26AEF85C00D38365 /* SukimaTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SukimaTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		557529FE26AEF85C00D38365 /* SukimaTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SukimaTimeTests.swift; sourceTree = "<group>"; };
+		55752A0026AEF85C00D38365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55752A0526AEF85C00D38365 /* SukimaTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SukimaTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55752A0926AEF85C00D38365 /* SukimaTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SukimaTimeUITests.swift; sourceTree = "<group>"; };
+		55752A0B26AEF85C00D38365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55752A1A26AEF99600D38365 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		55752A1F26AEFD5F00D38365 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		55752A2426AEFFC300D38365 /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
+		55752A3126B00AE500D38365 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		5592A2AC26FB2042009DD014 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		557529E126AEF85900D38365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557529F726AEF85C00D38365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55752A0226AEF85C00D38365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		557529DB26AEF85900D38365 = {
+			isa = PBXGroup;
+			children = (
+				557529E626AEF85900D38365 /* SukimaTime */,
+				557529FD26AEF85C00D38365 /* SukimaTimeTests */,
+				55752A0826AEF85C00D38365 /* SukimaTimeUITests */,
+				557529E526AEF85900D38365 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		557529E526AEF85900D38365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				557529E426AEF85900D38365 /* SukimaTime.app */,
+				557529FA26AEF85C00D38365 /* SukimaTimeTests.xctest */,
+				55752A0526AEF85C00D38365 /* SukimaTimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		557529E626AEF85900D38365 /* SukimaTime */ = {
+			isa = PBXGroup;
+			children = (
+				557529E726AEF85900D38365 /* AppDelegate.swift */,
+				557529E926AEF85900D38365 /* SceneDelegate.swift */,
+				557529EB26AEF85900D38365 /* ViewController.swift */,
+				557529ED26AEF85900D38365 /* Main.storyboard */,
+				557529F026AEF85B00D38365 /* Assets.xcassets */,
+				5592A2AC26FB2042009DD014 /* Color.xcassets */,
+				557529F226AEF85B00D38365 /* LaunchScreen.storyboard */,
+				557529F526AEF85B00D38365 /* Info.plist */,
+				55752A1A26AEF99600D38365 /* ToDoViewController.swift */,
+				55752A1F26AEFD5F00D38365 /* SelectViewController.swift */,
+				55752A2426AEFFC300D38365 /* SuggestionViewController.swift */,
+				55752A3126B00AE500D38365 /* RunViewController.swift */,
+				5512522526B9547300F3E455 /* EndViewController.swift */,
+				550A0B7926D8C7FA0056536D /* SukimaTimeTabaBarController.swift */,
+				556677602711AD6500B5ABE2 /* ToDoTVCTableViewCell.swift */,
+				556677652711AD9300B5ABE2 /* ListViewController.swift */,
+				5566776A2711B77300B5ABE2 /* ContainerViewController.swift */,
+				556D248C278D91DE00B577E6 /* CarouselView.swift */,
+				556D2491278D923F00B577E6 /* CarouselCell.swift */,
+				556D2499278DA03A00B577E6 /* PagingPerCellFlowLayout.swift */,
+			);
+			path = SukimaTime;
+			sourceTree = "<group>";
+		};
+		557529FD26AEF85C00D38365 /* SukimaTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				557529FE26AEF85C00D38365 /* SukimaTimeTests.swift */,
+				55752A0026AEF85C00D38365 /* Info.plist */,
+			);
+			path = SukimaTimeTests;
+			sourceTree = "<group>";
+		};
+		55752A0826AEF85C00D38365 /* SukimaTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55752A0926AEF85C00D38365 /* SukimaTimeUITests.swift */,
+				55752A0B26AEF85C00D38365 /* Info.plist */,
+			);
+			path = SukimaTimeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		557529E326AEF85900D38365 /* SukimaTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55752A0E26AEF85C00D38365 /* Build configuration list for PBXNativeTarget "SukimaTime" */;
+			buildPhases = (
+				557529E026AEF85900D38365 /* Sources */,
+				557529E126AEF85900D38365 /* Frameworks */,
+				557529E226AEF85900D38365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SukimaTime;
+			productName = SukimaTime;
+			productReference = 557529E426AEF85900D38365 /* SukimaTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		557529F926AEF85C00D38365 /* SukimaTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55752A1126AEF85C00D38365 /* Build configuration list for PBXNativeTarget "SukimaTimeTests" */;
+			buildPhases = (
+				557529F626AEF85C00D38365 /* Sources */,
+				557529F726AEF85C00D38365 /* Frameworks */,
+				557529F826AEF85C00D38365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				557529FC26AEF85C00D38365 /* PBXTargetDependency */,
+			);
+			name = SukimaTimeTests;
+			productName = SukimaTimeTests;
+			productReference = 557529FA26AEF85C00D38365 /* SukimaTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55752A0426AEF85C00D38365 /* SukimaTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55752A1426AEF85C00D38365 /* Build configuration list for PBXNativeTarget "SukimaTimeUITests" */;
+			buildPhases = (
+				55752A0126AEF85C00D38365 /* Sources */,
+				55752A0226AEF85C00D38365 /* Frameworks */,
+				55752A0326AEF85C00D38365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55752A0726AEF85C00D38365 /* PBXTargetDependency */,
+			);
+			name = SukimaTimeUITests;
+			productName = SukimaTimeUITests;
+			productReference = 55752A0526AEF85C00D38365 /* SukimaTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		557529DC26AEF85900D38365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					557529E326AEF85900D38365 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					557529F926AEF85C00D38365 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 557529E326AEF85900D38365;
+					};
+					55752A0426AEF85C00D38365 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 557529E326AEF85900D38365;
+					};
+				};
+			};
+			buildConfigurationList = 557529DF26AEF85900D38365 /* Build configuration list for PBXProject "SukimaTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 557529DB26AEF85900D38365;
+			productRefGroup = 557529E526AEF85900D38365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557529E326AEF85900D38365 /* SukimaTime */,
+				557529F926AEF85C00D38365 /* SukimaTimeTests */,
+				55752A0426AEF85C00D38365 /* SukimaTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		557529E226AEF85900D38365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557529F426AEF85B00D38365 /* LaunchScreen.storyboard in Resources */,
+				5592A2AD26FB2042009DD014 /* Color.xcassets in Resources */,
+				557529F126AEF85B00D38365 /* Assets.xcassets in Resources */,
+				557529EF26AEF85900D38365 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557529F826AEF85C00D38365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55752A0326AEF85C00D38365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		557529E026AEF85900D38365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550A0B7A26D8C7FA0056536D /* SukimaTimeTabaBarController.swift in Sources */,
+				556677612711AD6500B5ABE2 /* ToDoTVCTableViewCell.swift in Sources */,
+				5512522626B9547300F3E455 /* EndViewController.swift in Sources */,
+				55752A2026AEFD5F00D38365 /* SelectViewController.swift in Sources */,
+				55752A1B26AEF99600D38365 /* ToDoViewController.swift in Sources */,
+				556677662711AD9300B5ABE2 /* ListViewController.swift in Sources */,
+				556D248D278D91DE00B577E6 /* CarouselView.swift in Sources */,
+				55752A2526AEFFC300D38365 /* SuggestionViewController.swift in Sources */,
+				557529EC26AEF85900D38365 /* ViewController.swift in Sources */,
+				55752A3226B00AE500D38365 /* RunViewController.swift in Sources */,
+				557529E826AEF85900D38365 /* AppDelegate.swift in Sources */,
+				556D2492278D923F00B577E6 /* CarouselCell.swift in Sources */,
+				5566776B2711B77300B5ABE2 /* ContainerViewController.swift in Sources */,
+				556D249A278DA03A00B577E6 /* PagingPerCellFlowLayout.swift in Sources */,
+				557529EA26AEF85900D38365 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557529F626AEF85C00D38365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557529FF26AEF85C00D38365 /* SukimaTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55752A0126AEF85C00D38365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55752A0A26AEF85C00D38365 /* SukimaTimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		557529FC26AEF85C00D38365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557529E326AEF85900D38365 /* SukimaTime */;
+			targetProxy = 557529FB26AEF85C00D38365 /* PBXContainerItemProxy */;
+		};
+		55752A0726AEF85C00D38365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557529E326AEF85900D38365 /* SukimaTime */;
+			targetProxy = 55752A0626AEF85C00D38365 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		557529ED26AEF85900D38365 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557529EE26AEF85900D38365 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		557529F226AEF85B00D38365 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557529F326AEF85B00D38365 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55752A0C26AEF85C00D38365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55752A0D26AEF85C00D38365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55752A0F26AEF85C00D38365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63VP8RR5DR;
+				INFOPLIST_FILE = SukimaTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SukiTime.honoka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		55752A1026AEF85C00D38365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63VP8RR5DR;
+				INFOPLIST_FILE = SukimaTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SukiTime.honoka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		55752A1226AEF85C00D38365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SukimaTimeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.SukimaTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SukimaTime.app/SukimaTime";
+			};
+			name = Debug;
+		};
+		55752A1326AEF85C00D38365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SukimaTimeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.SukimaTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SukimaTime.app/SukimaTime";
+			};
+			name = Release;
+		};
+		55752A1526AEF85C00D38365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SukimaTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.SukimaTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SukimaTime;
+			};
+			name = Debug;
+		};
+		55752A1626AEF85C00D38365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SukimaTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.SukimaTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SukimaTime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		557529DF26AEF85900D38365 /* Build configuration list for PBXProject "SukimaTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55752A0C26AEF85C00D38365 /* Debug */,
+				55752A0D26AEF85C00D38365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55752A0E26AEF85C00D38365 /* Build configuration list for PBXNativeTarget "SukimaTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55752A0F26AEF85C00D38365 /* Debug */,
+				55752A1026AEF85C00D38365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55752A1126AEF85C00D38365 /* Build configuration list for PBXNativeTarget "SukimaTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55752A1226AEF85C00D38365 /* Debug */,
+				55752A1326AEF85C00D38365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55752A1426AEF85C00D38365 /* Build configuration list for PBXNativeTarget "SukimaTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55752A1526AEF85C00D38365 /* Debug */,
+				55752A1626AEF85C00D38365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 557529DC26AEF85900D38365 /* Project object */;
+}
