@@ -14,14 +14,14 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
     @IBOutlet weak var todoTextField:UITextField!
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
     @IBOutlet weak var timeTextField:UITextField!
-    @IBOutlet weak var dateTextField:UITextField!
+//    @IBOutlet weak var dateTextField:UITextField!
     @IBOutlet weak var add:UIButton!
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var datePicker: UIDatePicker!
     var todonumber:Int=0
     var timenumber:Int=0
     var datenumber:Int=0
-//    var date:String=""
+    var date:String=""
     
     var todoArray:[[Any]] = []
 
@@ -69,7 +69,7 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
         }
         setNumber()
         timeTextField.isEnabled=false
-        dateTextField.isEnabled=false
+//        dateTextField.isEnabled=false
         
     }
     
@@ -84,7 +84,7 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
 //        項目欄のリセット
         todoTextField.text=""
         timeTextField.text=""
-        dateTextField.text=""
+//        dateTextField.text=""
 //        すべての項目が未入力の状態である
         todonumber=0
         timenumber=0
@@ -119,9 +119,9 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
     
 //    日付入力
     @IBAction func dateChanged(_ sender: UIDatePicker) {
-        self.dateTextField.text = self.format(date: datePicker.date)
+//        self.dateTextField.text = self.format(date: datePicker.date)
         
-//        date = self.format(date: datePicker.date)
+        date = self.format(date: datePicker.date)
         
 //        日付欄は入力済みである
         datenumber=1
@@ -175,17 +175,10 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
         datenumber = saveData.object(forKey: "date") as! Int
         judgeNumber()
     }
-    
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //        dateTextField.text = dateTextField.text
-        self.view.endEditing(true)
-    }
-    
         
 //    Todoの追加
     @IBAction func addData(){
-        todoArray += [[todoTextField.text!, timeTextField.text!, dateTextField.text!]]
+        todoArray += [[todoTextField.text!, timeTextField.text!, date]]
         print(todoArray)
         saveData.set(todoArray, forKey: "list")
 //        項目のリセット

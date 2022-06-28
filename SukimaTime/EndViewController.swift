@@ -45,6 +45,8 @@ class EndViewController: UIViewController {
         retainbutton.backgroundColor=UIColor(named: "Blue1")
         retainbutton.layer.cornerRadius=retainbutton.frame.height/2
         
+        self.navigationItem.hidesBackButton = true
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,6 +57,8 @@ class EndViewController: UIViewController {
         todoLabel.text=runArray[0] as? String
         timeLabel.text=runArray[1] as? String
         dateLabel.text=runArray[2] as? String
+        
+        self.navigationItem.hidesBackButton = true
         
     }
     

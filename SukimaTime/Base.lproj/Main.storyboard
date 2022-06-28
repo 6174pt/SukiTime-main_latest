@@ -256,34 +256,18 @@
                                         <color key="textColor" red="0.34509803921568627" green="0.38039215686274508" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="GQc-yM-Rl8">
-                                        <rect key="frame" x="32" y="364" width="272" height="40"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDE-oB-HIS">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="ySc-6b-L9r"/>
-                                                </constraints>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="wac-pU-UTv">
-                                                <rect key="frame" x="152" y="0.0" width="120" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="1xj-aN-D9w"/>
-                                                    <constraint firstAttribute="width" constant="120" id="onG-0J-KBR"/>
-                                                </constraints>
-                                                <connections>
-                                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="exp-xe-nIw"/>
-                                                </connections>
-                                            </datePicker>
-                                        </subviews>
-                                    </stackView>
+                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="wac-pU-UTv">
+                                        <rect key="frame" x="32" y="364" width="124.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1xj-aN-D9w"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="exp-xe-nIw"/>
+                                        </connections>
+                                    </datePicker>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="GQc-yM-Rl8" firstAttribute="top" secondItem="DP3-Cv-huN" secondAttribute="bottom" constant="12" id="18K-RS-BBu"/>
                                     <constraint firstItem="1BF-Ka-Xj3" firstAttribute="top" secondItem="pEh-5Y-uE7" secondAttribute="top" constant="64" id="8aa-7I-EjL"/>
                                     <constraint firstItem="1BF-Ka-Xj3" firstAttribute="centerX" secondItem="pEh-5Y-uE7" secondAttribute="centerX" id="BPg-kS-DQN"/>
                                     <constraint firstItem="4ID-vX-6KY" firstAttribute="top" secondItem="9a9-Ng-tUr" secondAttribute="bottom" constant="24" id="DFp-z6-Gtl"/>
@@ -291,16 +275,17 @@
                                     <constraint firstItem="YnX-Sd-Z6X" firstAttribute="leading" secondItem="pEh-5Y-uE7" secondAttribute="leading" constant="32" id="H6i-Un-86y"/>
                                     <constraint firstItem="B6J-jY-kcp" firstAttribute="leading" secondItem="pEh-5Y-uE7" secondAttribute="leading" constant="32" id="HEl-F0-9SB"/>
                                     <constraint firstItem="DP3-Cv-huN" firstAttribute="top" secondItem="B6J-jY-kcp" secondAttribute="bottom" constant="24" id="J3K-0V-gmH"/>
+                                    <constraint firstItem="wac-pU-UTv" firstAttribute="top" secondItem="DP3-Cv-huN" secondAttribute="bottom" constant="12" id="UGA-Xl-5C8"/>
                                     <constraint firstItem="4ID-vX-6KY" firstAttribute="leading" secondItem="pEh-5Y-uE7" secondAttribute="leading" constant="32" id="Xzw-W4-0eQ"/>
                                     <constraint firstItem="Nv7-bh-svd" firstAttribute="top" secondItem="4ID-vX-6KY" secondAttribute="bottom" constant="12" id="ZCN-GZ-j4g"/>
                                     <constraint firstItem="9a9-Ng-tUr" firstAttribute="centerX" secondItem="pEh-5Y-uE7" secondAttribute="centerX" id="ZHq-l2-PC3"/>
                                     <constraint firstItem="DP3-Cv-huN" firstAttribute="leading" secondItem="pEh-5Y-uE7" secondAttribute="leading" constant="32" id="ZlG-U5-lGQ"/>
                                     <constraint firstAttribute="trailing" secondItem="Nv7-bh-svd" secondAttribute="trailing" constant="32" id="bDY-x8-RPf"/>
                                     <constraint firstItem="9a9-Ng-tUr" firstAttribute="top" secondItem="1BF-Ka-Xj3" secondAttribute="bottom" constant="16" id="ffC-Qg-TPW"/>
-                                    <constraint firstItem="GQc-yM-Rl8" firstAttribute="leading" secondItem="pEh-5Y-uE7" secondAttribute="leading" constant="32" id="gVH-NL-kW6"/>
                                     <constraint firstItem="B6J-jY-kcp" firstAttribute="top" secondItem="YnX-Sd-Z6X" secondAttribute="bottom" constant="24" id="jgU-Jc-18Y"/>
                                     <constraint firstAttribute="height" constant="420" id="l7J-8A-7UK"/>
                                     <constraint firstItem="Nv7-bh-svd" firstAttribute="centerX" secondItem="pEh-5Y-uE7" secondAttribute="centerX" id="ln9-ZQ-7sD"/>
+                                    <constraint firstItem="wac-pU-UTv" firstAttribute="leading" secondItem="pEh-5Y-uE7" secondAttribute="leading" constant="32" id="mT9-KC-MTM"/>
                                     <constraint firstItem="YnX-Sd-Z6X" firstAttribute="top" secondItem="Nv7-bh-svd" secondAttribute="bottom" constant="24" id="phH-0N-qam"/>
                                     <constraint firstAttribute="trailing" secondItem="B6J-jY-kcp" secondAttribute="trailing" constant="80" id="zWW-OF-RuA"/>
                                 </constraints>
@@ -335,7 +320,6 @@
                         <outlet property="add" destination="sF2-1f-GV2" id="hXb-m8-Yuc"/>
                         <outlet property="card" destination="pEh-5Y-uE7" id="9sM-5R-8hG"/>
                         <outlet property="datePicker" destination="wac-pU-UTv" id="8dx-sY-zIv"/>
-                        <outlet property="dateTextField" destination="LDE-oB-HIS" id="58J-bO-QCU"/>
                         <outlet property="timeSegmentedControl" destination="jg2-sd-g0z" id="lLM-yI-AAO"/>
                         <outlet property="timeTextField" destination="PzH-ug-I2R" id="Qt3-mY-YQe"/>
                         <outlet property="todoTextField" destination="Nv7-bh-svd" id="SSL-uh-T6p"/>
@@ -354,13 +338,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDoを追加してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZT-ZY-3TG">
-                                <rect key="frame" x="120.5" y="311" width="173.5" height="18"/>
+                                <rect key="frame" x="38.5" y="-137" width="173.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="Blue2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pDx-NL-sfS">
-                                <rect key="frame" x="107" y="369" width="200" height="158"/>
+                                <rect key="frame" x="25" y="-79" width="200" height="158"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nb9-pz-X2e">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="69"/>
@@ -415,7 +399,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please add ToDo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7c-Yu-NPw">
-                                <rect key="frame" x="133.5" y="277" width="147" height="24"/>
+                                <rect key="frame" x="51.5" y="-171" width="147" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
