@@ -61,7 +61,6 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
         presentingViewController?.beginAppearanceTransition(false, animated: animated)
         super.viewWillAppear(animated)
         
-        
         if let todo = saveData.object(forKey: "list") {
             todoArray = saveData.object(forKey: "list") as! [[Any]]
         } else {
@@ -175,6 +174,11 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
         datenumber = saveData.object(forKey: "date") as! Int
         judgeNumber()
     }
+    
+//    TextField以外をタップしたらキーボードを消す
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            self.view.endEditing(true)
+        }
         
 //    Todoの追加
     @IBAction func addData(){

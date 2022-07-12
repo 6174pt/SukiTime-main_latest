@@ -14,7 +14,10 @@ protocol CatchProtocol {
 
 class CarouselCell: UICollectionViewCell {
     
-    var countLabel:UILabel!
+    var minutesLabel:UILabel!
+    var todotitleLabel:UILabel!
+    var todoLabel:UILabel!
+    var datetitleLabel:UILabel!
     var dateLabel:UILabel!
     var decide:UIButton!
     
@@ -40,31 +43,64 @@ class CarouselCell: UICollectionViewCell {
         let margin:CGFloat = 15
         let margin2:CGFloat = 30
         
-        // 数字ラベルを設置する
-        countLabel = UILabel()
-        countLabel.frame = CGRect(x:margin,
-                                  y:margin * 3,
+        // 分数アイコン
+        minutesLabel = UILabel()
+        minutesLabel.frame = CGRect(x: (width-50)/2, y: margin * 2, width: 50, height: 50)
+        minutesLabel.textAlignment = .center
+        minutesLabel.textColor = UIColor.white
+        minutesLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        minutesLabel.backgroundColor = UIColor(named: "Blue2")
+        minutesLabel.layer.cornerRadius = 50/2
+        minutesLabel.clipsToBounds = true
+        
+        // todoタイトル
+        todotitleLabel = UILabel()
+        todotitleLabel.text = "Todo"
+        todotitleLabel.frame = CGRect(x:margin,
+                                  y:margin * 6,
                                   width:width - margin * 2,
                                   height:50)
-        countLabel.textAlignment = .center
-        countLabel.textColor = UIColor.black
-        countLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
+        todotitleLabel.textAlignment = .center
+        todotitleLabel.textColor = UIColor.gray
+        todotitleLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         
+        // todo名ラベル
+        todoLabel = UILabel()
+        todoLabel.frame = CGRect(x:margin,
+                                  y:margin * 8,
+                                  width:width - margin * 2,
+                                  height:50)
+        todoLabel.textAlignment = .center
+        todoLabel.textColor = UIColor.black
+        todoLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
+        
+        // 日付タイトル
+        datetitleLabel = UILabel()
+        datetitleLabel.text = "Date"
+        datetitleLabel.frame = CGRect(x:margin,
+                                  y:margin * 11,
+                                  width:width - margin * 2,
+                                  height:50)
+        datetitleLabel.textAlignment = .center
+        datetitleLabel.textColor = UIColor.gray
+        datetitleLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        
+        // 日付ラベル
         dateLabel = UILabel()
         dateLabel.frame = CGRect(x:margin,
-                                  y:margin * 5,
+                                  y:margin * 13,
                                   width:width - margin * 2,
                                   height:50)
         dateLabel.textAlignment = .center
         dateLabel.textColor = UIColor.black
         dateLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         
+        // 決定ボタン
         decide = UIButton()
         decide.frame = CGRect(x:margin,
-                                  y:margin * 15,
+                              y:height - 50 - margin * 1.5,
                                   width:width - margin * 2,
                                   height:50)
-//        decide.center = self.contentView.center
         decide.backgroundColor = UIColor(named: "Blue2")
         decide.setTitleColor(UIColor.white, for: UIControl.State.normal)
         decide.setTitle("Decide", for: .normal)
@@ -80,8 +116,10 @@ class CarouselCell: UICollectionViewCell {
         decide.addTarget(self, action: #selector(self.tapButton(_:)), for: UIControl.Event.touchUpInside)
         
         
-        
-        self.contentView.addSubview(countLabel)
+        self.contentView.addSubview(minutesLabel)
+        self.contentView.addSubview(todotitleLabel)
+        self.contentView.addSubview(todoLabel)
+        self.contentView.addSubview(datetitleLabel)
         self.contentView.addSubview(dateLabel)
         self.contentView.addSubview(decide)
     }

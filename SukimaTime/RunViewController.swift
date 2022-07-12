@@ -27,6 +27,7 @@ class RunViewController: UIViewController {
     let circle:UIImageView=UIImageView()
     @IBOutlet var endButton:UIButton!
     let timerLabel:UILabel=UILabel()
+    let todoLabel:UILabel=UILabel()
 
 
     override func viewDidLoad() {
@@ -64,6 +65,14 @@ class RunViewController: UIViewController {
         shape.lineCap = .round
         view.layer.addSublayer(shape)
         
+//        todo名の表示
+        todoLabel.frame = CGRect(x: view.frame.size.width/2-100, y: (view.frame.size.height/2-40) - 70, width: 200, height: 80)
+        todoLabel.textAlignment = NSTextAlignment.center
+        todoLabel.textColor = UIColor.darkGray
+        todoLabel.font = UIFont.systemFont(ofSize: 20)
+        view.addSubview(todoLabel)
+        
+//        時間表示ラベル
         timerLabel.frame = CGRect(x: view.frame.size.width/2-100, y: view.frame.size.height/2-40, width: 200, height: 80)
         timerLabel.textAlignment = NSTextAlignment.center
         timerLabel.text = "00:00"
@@ -137,7 +146,9 @@ class RunViewController: UIViewController {
         firsttime = runtime
         
         timerLabel.text="\(firsttime/60):00"
+        todoLabel.text = runArray[0] as? String
         timerLabel.isHidden=true
+        todoLabel.isHidden=true
         
         }
     
@@ -189,16 +200,17 @@ class RunViewController: UIViewController {
         shape.add(animation,forKey: "animation")
         
         timerLabel.isHidden=false
+        todoLabel.isHidden=false
         firstTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(firstCountDown), userInfo: nil, repeats: true)
         
-        UIButton.animate(withDuration: 0.5, animations: {
+        UIButton.animate(withDuration: 0.2, animations: {
              self.startButton.alpha = 0
         }, completion:  { _ in
                self.startButton.isHidden = true
         })
         stopButton.isHidden=false
         stopButton.alpha=0
-        UIButton.animate(withDuration: 0.5, animations: {
+        UIButton.animate(withDuration: 0.2, animations: {
             self.stopButton.alpha=1
             self.resetButton.alpha=1
         })
@@ -262,6 +274,7 @@ class RunViewController: UIViewController {
         let sec = Int(firsttime) % 60
         timerLabel.text = String(format: "%02d:%02d", min,sec)
         timerLabel.isHidden = true
+        todoLabel.isHidden = true
     }
 
 }

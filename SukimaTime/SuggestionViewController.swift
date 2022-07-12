@@ -81,8 +81,8 @@ class SuggestionViewController: UIViewController, UICollectionViewDataSource{
         cell.contentView.layer.shadowRadius = 5
         cell.id = indexPath.row
         
-        
-        cell.countLabel.text = filteredArray[indexPath.row][0] as? String
+        cell.minutesLabel.text = filteredArray[indexPath.row][1] as? String
+        cell.todoLabel.text = filteredArray[indexPath.row][0] as? String
         cell.dateLabel.text = filteredArray[indexPath.row][2] as? String
         
         cell.delegate = self
