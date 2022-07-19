@@ -138,6 +138,7 @@ class ListViewController: UIViewController,UITableViewDataSource,UITableViewDele
         cell.todoView.layer.shadowColor = UIColor.gray.cgColor
         cell.todoimg.layer.cornerRadius=cell.todoimg.frame.height/2
         cell.todoLabel?.text = array[indexPath.row][0] as? String
+        cell.todoLabel.adjustsFontSizeToFitWidth = true
         cell.dateLabel?.text = array[indexPath.row][2] as? String
         cell.minuteLabel?.text = array[indexPath.row][1] as? String
         

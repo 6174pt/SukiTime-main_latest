@@ -73,6 +73,7 @@ class CarouselCell: UICollectionViewCell {
         todoLabel.textAlignment = .center
         todoLabel.textColor = UIColor.black
         todoLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
+        todoLabel.adjustsFontSizeToFitWidth = true
         
         // 日付タイトル
         datetitleLabel = UILabel()

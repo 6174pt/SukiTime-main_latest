@@ -70,6 +70,8 @@ class RunViewController: UIViewController {
         todoLabel.textAlignment = NSTextAlignment.center
         todoLabel.textColor = UIColor.darkGray
         todoLabel.font = UIFont.systemFont(ofSize: 20)
+        
+        todoLabel.adjustsFontSizeToFitWidth = true
         view.addSubview(todoLabel)
         
 //        時間表示ラベル
@@ -147,10 +149,11 @@ class RunViewController: UIViewController {
         
         timerLabel.text="\(firsttime/60):00"
         todoLabel.text = runArray[0] as? String
-        timerLabel.isHidden=true
-        todoLabel.isHidden=true
         
-        }
+//        timerLabel.isHidden=true
+//        todoLabel.isHidden=true
+        
+    }
     
 //    一度目のスタートで呼び出す
     @objc func firstCountDown(){

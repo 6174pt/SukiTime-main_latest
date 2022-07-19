@@ -29,6 +29,8 @@ class EndViewController: UIViewController {
         timeLabel.text=runArray[1] as? String
         dateLabel.text=runArray[2] as? String
         
+        todoLabel.adjustsFontSizeToFitWidth = true
+        
         //UI設定
         card.layer.cornerRadius = 10.0
         card.layer.shadowOffset = CGSize(width: 0, height: 0)
@@ -57,6 +59,8 @@ class EndViewController: UIViewController {
         todoLabel.text=runArray[0] as? String
         timeLabel.text=runArray[1] as? String
         dateLabel.text=runArray[2] as? String
+        
+        todoLabel.adjustsFontSizeToFitWidth = true
         
         self.navigationItem.hidesBackButton = true
         

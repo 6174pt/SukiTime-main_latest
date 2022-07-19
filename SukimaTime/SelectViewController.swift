@@ -72,6 +72,8 @@ class SelectViewController: UIViewController {
         
         if checked5Array.count == 0{
             fiveminuts.isEnabled=false
+            setInvalidButton(button: fiveminuts)
+            fiveminuts.backgroundColor=UIColor(named: "Blue2")
             fiveminuts.alpha=0.5
         }else{
             fiveminuts.isEnabled=true
@@ -80,6 +82,8 @@ class SelectViewController: UIViewController {
         
         if checked10Array.count == 0{
             tenminuts.isEnabled=false
+            setInvalidButton(button: tenminuts)
+            tenminuts.backgroundColor=UIColor(named: "Blue1")
             tenminuts.alpha=0.5
         }else{
             tenminuts.isEnabled=true
@@ -88,6 +92,8 @@ class SelectViewController: UIViewController {
         
         if checked15Array.count == 0{
             fifteenminuts.isEnabled=false
+            setInvalidButton(button: fifteenminuts)
+            fifteenminuts.backgroundColor=UIColor(named: "Blue1")
             fifteenminuts.alpha=0.5
         }else{
             fifteenminuts.isEnabled=true
@@ -96,6 +102,8 @@ class SelectViewController: UIViewController {
         
         if checked30Array.count == 0{
             thirtyminuts.isEnabled=false
+            setInvalidButton(button: thirtyminuts)
+            thirtyminuts.backgroundColor=UIColor(named: "Blue2")
             thirtyminuts.alpha=0.5
         }else{
             thirtyminuts.isEnabled=true
@@ -128,6 +136,12 @@ class SelectViewController: UIViewController {
         button.layer.shadowOpacity = 0.5
         button.layer.shadowRadius = 10
         button.layer.shadowColor = UIColor.gray.cgColor
+    }
+    
+    func setInvalidButton(button:UIButton!){
+        button.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        button.layer.cornerRadius = 10
+        button.layer.shadowOffset = CGSize(width: 0, height: 0 )
     }
     
     
