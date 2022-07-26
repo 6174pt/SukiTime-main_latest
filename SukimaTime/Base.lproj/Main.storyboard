@@ -218,6 +218,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
+                                            <action selector="textFieldDidChangeSelection:" destination="BYZ-38-t0r" eventType="editingChanged" id="tPo-M7-drq"/>
                                             <action selector="todoEditChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="m7R-X3-Hqi"/>
                                         </connections>
                                     </textField>
@@ -265,6 +266,12 @@
                                             <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="exp-xe-nIw"/>
                                         </connections>
                                     </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIL-ya-PSi">
+                                        <rect key="frame" x="314" y="151" width="28" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -277,6 +284,8 @@
                                     <constraint firstItem="DP3-Cv-huN" firstAttribute="top" secondItem="B6J-jY-kcp" secondAttribute="bottom" constant="24" id="J3K-0V-gmH"/>
                                     <constraint firstItem="wac-pU-UTv" firstAttribute="top" secondItem="DP3-Cv-huN" secondAttribute="bottom" constant="12" id="UGA-Xl-5C8"/>
                                     <constraint firstItem="4ID-vX-6KY" firstAttribute="leading" secondItem="pEh-5Y-uE7" secondAttribute="leading" constant="32" id="Xzw-W4-0eQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="HIL-ya-PSi" secondAttribute="trailing" constant="32" id="Y7h-hl-SPv"/>
+                                    <constraint firstItem="Nv7-bh-svd" firstAttribute="top" secondItem="HIL-ya-PSi" secondAttribute="bottom" constant="8" id="YMg-6t-Klb"/>
                                     <constraint firstItem="Nv7-bh-svd" firstAttribute="top" secondItem="4ID-vX-6KY" secondAttribute="bottom" constant="12" id="ZCN-GZ-j4g"/>
                                     <constraint firstItem="9a9-Ng-tUr" firstAttribute="centerX" secondItem="pEh-5Y-uE7" secondAttribute="centerX" id="ZHq-l2-PC3"/>
                                     <constraint firstItem="DP3-Cv-huN" firstAttribute="leading" secondItem="pEh-5Y-uE7" secondAttribute="leading" constant="32" id="ZlG-U5-lGQ"/>
@@ -322,6 +331,7 @@
                         <outlet property="datePicker" destination="wac-pU-UTv" id="8dx-sY-zIv"/>
                         <outlet property="timeSegmentedControl" destination="jg2-sd-g0z" id="lLM-yI-AAO"/>
                         <outlet property="timeTextField" destination="PzH-ug-I2R" id="Qt3-mY-YQe"/>
+                        <outlet property="todoNameCountLabel" destination="HIL-ya-PSi" id="Bdh-Xk-eh4"/>
                         <outlet property="todoTextField" destination="Nv7-bh-svd" id="SSL-uh-T6p"/>
                     </connections>
                 </viewController>
@@ -338,13 +348,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ToDoを追加してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZT-ZY-3TG">
-                                <rect key="frame" x="38.5" y="311" width="173.5" height="18"/>
+                                <rect key="frame" x="38.5" y="-137" width="173.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="Blue2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pDx-NL-sfS">
-                                <rect key="frame" x="25" y="369" width="200" height="158"/>
+                                <rect key="frame" x="25" y="-79" width="200" height="158"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nb9-pz-X2e">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="69"/>
@@ -399,7 +409,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please add ToDo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7c-Yu-NPw">
-                                <rect key="frame" x="51.5" y="277" width="147" height="24"/>
+                                <rect key="frame" x="51.5" y="-171" width="147" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

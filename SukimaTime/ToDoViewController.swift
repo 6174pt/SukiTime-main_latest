@@ -12,9 +12,9 @@ import UIKit
 class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDelegate{
     
     @IBOutlet weak var todoTextField:UITextField!
+    @IBOutlet var todoNameCountLabel:UILabel!
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
     @IBOutlet weak var timeTextField:UITextField!
-//    @IBOutlet weak var dateTextField:UITextField!
     @IBOutlet weak var add:UIButton!
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -22,6 +22,8 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
     var timenumber:Int=0
     var datenumber:Int=0
     var date:String=""
+    
+    let maxTodoNameLength = 15
     
     var todoArray:[[Any]] = []
 
@@ -69,6 +71,8 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
         setNumber()
         timeTextField.isEnabled=false
 //        dateTextField.isEnabled=false
+        
+        todoNameCountLabel.text="0/15"
         
     }
     
@@ -175,6 +179,16 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
         judgeNumber()
     }
     
+    @IBAction func textFieldDidChangeSelection(_ textField: UITextField) {
+        guard let todoName = todoTextField.text else { return }
+
+        if todoName.count > maxTodoNameLength {
+            todoTextField.text = String(todoName.prefix(maxTodoNameLength))
+        }
+        
+        todoNameCountLabel.text = "\(todoTextField.text!.count)/15"
+    }
+    
 //    TextField以外をタップしたらキーボードを消す
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
@@ -186,6 +200,7 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
         print(todoArray)
         saveData.set(todoArray, forKey: "list")
 //        項目のリセット
+        todoNameCountLabel.text="0/15"
         setNumber()
         add.isEnabled=false
         add.backgroundColor = UIColor(red: 133/255, green: 152/255, blue: 183/255, alpha: 0.4)

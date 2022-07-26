@@ -136,6 +136,7 @@ class RunViewController: UIViewController {
         presentingViewController?.beginAppearanceTransition(false, animated: animated)
         super.viewWillAppear(animated)
         
+        
         filteredArray = saveData.object(forKey: "filter") as! [[Any]]
         
         runArray += filteredArray[indexnumber]
@@ -147,17 +148,21 @@ class RunViewController: UIViewController {
         runtime = Int(runArray[1] as! String)! * 60
         firsttime = runtime
         
-        timerLabel.text="\(firsttime/60):00"
-        todoLabel.text = runArray[0] as? String
         
-//        timerLabel.isHidden=true
-//        todoLabel.isHidden=true
+        todoLabel.text = runArray[0] as? String
+        timerLabel.text="\(firsttime/60):00"
+        
+        timerLabel.isHidden=true
+        todoLabel.isHidden=true
+        
+        
         
     }
     
 //    一度目のスタートで呼び出す
     @objc func firstCountDown(){
         
+        print(firsttime)
         let min = Int(firsttime/60)
         let sec = Int(firsttime) % 60
         timerLabel.text = String(format: "%02d:%02d", min,sec)
@@ -182,6 +187,7 @@ class RunViewController: UIViewController {
 //    二度目以降のスタートで呼び出す
     @objc func secondCountDown(){
         
+        print(middletime)
         let min = Int(middletime/60)
         let sec = Int(middletime) % 60
         timerLabel.text = String(format: "%02d:%02d", min,sec)

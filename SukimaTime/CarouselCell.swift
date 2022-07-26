@@ -15,6 +15,7 @@ protocol CatchProtocol {
 class CarouselCell: UICollectionViewCell {
     
     var minutesLabel:UILabel!
+    var todoNumberLabel:UILabel!
     var todotitleLabel:UILabel!
     var todoLabel:UILabel!
     var datetitleLabel:UILabel!
@@ -52,6 +53,18 @@ class CarouselCell: UICollectionViewCell {
         minutesLabel.backgroundColor = UIColor(named: "Blue2")
         minutesLabel.layer.cornerRadius = 50/2
         minutesLabel.clipsToBounds = true
+        
+        // todoが何個目かの表示
+        todoNumberLabel = UILabel()
+        todoNumberLabel.text = "0/0"
+        todoNumberLabel.frame = CGRect(x:width-margin*3,
+                                  y:0,
+                                  width:margin*3,
+                                  height:50)
+        todoNumberLabel.textAlignment = .center
+        todoNumberLabel.textColor = UIColor.gray
+        todoNumberLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        
         
         // todoタイトル
         todotitleLabel = UILabel()
@@ -118,6 +131,7 @@ class CarouselCell: UICollectionViewCell {
         
         
         self.contentView.addSubview(minutesLabel)
+        self.contentView.addSubview(todoNumberLabel)
         self.contentView.addSubview(todotitleLabel)
         self.contentView.addSubview(todoLabel)
         self.contentView.addSubview(datetitleLabel)

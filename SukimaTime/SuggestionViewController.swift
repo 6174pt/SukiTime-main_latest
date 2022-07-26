@@ -26,6 +26,7 @@ class SuggestionViewController: UIViewController, UICollectionViewDataSource{
         presentingViewController?.beginAppearanceTransition(false, animated: animated)
         super.viewWillAppear(animated)
         
+        
 //        CarouselView(CollectionView)
         let width = self.view.frame.width
         let height = self.view.frame.height
@@ -81,6 +82,8 @@ class SuggestionViewController: UIViewController, UICollectionViewDataSource{
         cell.contentView.layer.shadowRadius = 5
         cell.id = indexPath.row
         
+        cell.todoNumberLabel.text="\(cell.id + 1)/\(filteredArray.count)"
+        
         cell.minutesLabel.text = filteredArray[indexPath.row][1] as? String
         cell.todoLabel.text = filteredArray[indexPath.row][0] as? String
         cell.dateLabel.text = filteredArray[indexPath.row][2] as? String
@@ -101,6 +104,8 @@ extension SuggestionViewController: CatchProtocol {
 
         let runViewController = (storyBoard.instantiateViewController(identifier: "RunViewController")) as! RunViewController
         runViewController.indexnumber = taskId
+        
+        runViewController.hidesBottomBarWhenPushed = true
 
         self.navigationController?.pushViewController(runViewController, animated: true)
     }
