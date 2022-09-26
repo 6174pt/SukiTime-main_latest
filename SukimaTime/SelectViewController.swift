@@ -28,6 +28,13 @@ class SelectViewController: UIViewController {
     presentingViewController?.beginAppearanceTransition(false, animated: animated)
         super.viewWillAppear(animated)
         
+        let content = UNMutableNotificationContent()
+        content.title = "SukiTime"
+        content.body = "スキマ時間を有効活用しませんか？"
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        let request = UNNotificationRequest(identifier: "notification", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         

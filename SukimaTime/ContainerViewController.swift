@@ -31,13 +31,13 @@ class ContainerViewController: UIViewController {
     
     
     @IBAction func plus(_ sender: Any){
-        // ①storyboardのインスタンス取得
+        // storyboardのインスタンス取得
         let storyboard: UIStoryboard = self.storyboard!
         
-        // ②遷移先ViewControllerのインスタンス取得
+        // 遷移先ViewControllerのインスタンス取得
         let nextView = storyboard.instantiateViewController(withIdentifier: "add") as! ToDoViewController
         
-        // ③画面遷移
+        // 画面遷移
         self.present(nextView, animated: true, completion: nil)
     }
     

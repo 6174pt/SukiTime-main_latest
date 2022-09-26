@@ -35,7 +35,7 @@ class RunViewController: UIViewController {
         
         let img = UIImage(named: "stopbutton1")
         
-        let ciclePath=UIBezierPath(arcCenter: view.center, radius: 150, startAngle: -(.pi/2), endAngle: .pi/2*3, clockwise: true)
+        let circlePath=UIBezierPath(arcCenter: view.center, radius: 150, startAngle: -(.pi/2), endAngle: .pi/2*3, clockwise: true)
         
         
 //        ベース
@@ -50,14 +50,14 @@ class RunViewController: UIViewController {
         
 //        ゲージベース
         let baseShape=CAShapeLayer()
-        baseShape.path=ciclePath.cgPath
+        baseShape.path=circlePath.cgPath
         baseShape.fillColor=UIColor.clear.cgColor
         baseShape.lineWidth=10
         baseShape.strokeColor=UIColor(named: "Gray")?.cgColor
         view.layer.addSublayer(baseShape)
         
 //        ゲージ
-        shape.path=ciclePath.cgPath
+        shape.path=circlePath.cgPath
         shape.lineWidth=10
         shape.strokeColor=UIColor(named: "Blue2")?.cgColor
         shape.fillColor=UIColor.clear.cgColor

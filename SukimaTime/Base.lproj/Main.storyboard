@@ -131,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="1241" y="812"/>
         </scene>
-        <!--ToDo-->
+        <!--登録-->
         <scene sceneID="EAl-A3-tIh">
             <objects>
                 <viewController storyboardIdentifier="table" id="1Jv-2C-y0T" customClass="ContainerViewController" customModule="SukimaTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -173,7 +173,7 @@
                             <constraint firstAttribute="bottom" secondItem="LPm-Eq-eTy" secondAttribute="bottom" id="tJc-8w-lZq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ToDo" image="list.bullet" catalog="system" id="BBC-jd-ZWB"/>
+                    <tabBarItem key="tabBarItem" title="登録" image="list.bullet" catalog="system" id="BBC-jd-ZWB"/>
                     <navigationItem key="navigationItem" id="8S7-O9-5Ve"/>
                     <connections>
                         <outlet property="button" destination="gTs-bk-muf" id="THy-9Q-XBP"/>
@@ -194,8 +194,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEh-5Y-uE7" userLabel="card">
                                 <rect key="frame" x="20" y="110" width="374" height="420"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add ToDo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BF-Ka-Xj3">
-                                        <rect key="frame" x="144" y="64" width="86.5" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo登録" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BF-Ka-Xj3">
+                                        <rect key="frame" x="143.5" y="64" width="87" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -203,7 +203,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDoの追加" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-Ng-tUr">
                                         <rect key="frame" x="146" y="104" width="82" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="0.34509803919999998" green="0.3803921569" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ID-vX-6KY">
@@ -258,7 +258,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="wac-pU-UTv">
-                                        <rect key="frame" x="32" y="364" width="124.5" height="40"/>
+                                        <rect key="frame" x="32" y="364" width="126.5" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="1xj-aN-D9w"/>
                                         </constraints>
@@ -339,7 +339,7 @@
             </objects>
             <point key="canvasLocation" x="2044.9275362318842" y="1457.8125"/>
         </scene>
-        <!--Select-->
+        <!--分数選択-->
         <scene sceneID="vXH-Ac-BDh">
             <objects>
                 <viewController storyboardIdentifier="SelectView" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jkO-be-zAt" customClass="SelectViewController" customModule="SukimaTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -348,13 +348,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ToDoを追加してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZT-ZY-3TG">
-                                <rect key="frame" x="38.5" y="-137" width="173.5" height="18"/>
+                                <rect key="frame" x="120.5" y="311" width="173.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="Blue2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pDx-NL-sfS">
-                                <rect key="frame" x="25" y="-79" width="200" height="158"/>
+                                <rect key="frame" x="107" y="369" width="200" height="158"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nb9-pz-X2e">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="69"/>
@@ -409,7 +409,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please add ToDo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7c-Yu-NPw">
-                                <rect key="frame" x="51.5" y="-171" width="147" height="24"/>
+                                <rect key="frame" x="133.5" y="277" width="147" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -428,7 +428,7 @@
                             <constraint firstItem="M7c-Yu-NPw" firstAttribute="centerX" secondItem="DT6-1p-zXY" secondAttribute="centerX" id="yPD-9z-PaE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Select" id="c0w-en-YAx"/>
+                    <navigationItem key="navigationItem" title="分数選択" id="c0w-en-YAx"/>
                     <connections>
                         <outlet property="fifteenminuts" destination="xRZ-sC-9ux" id="C2K-c7-mRM"/>
                         <outlet property="fiveminuts" destination="k50-W4-vZ5" id="y3b-Mx-tal"/>
@@ -442,7 +442,7 @@
             </objects>
             <point key="canvasLocation" x="1913.0434782608697" y="93.75"/>
         </scene>
-        <!--Suggest-->
+        <!--ToDo提案-->
         <scene sceneID="pnu-BZ-dTS">
             <objects>
                 <viewController storyboardIdentifier="SuggestionView" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kfJ-nk-tBh" customClass="SuggestionViewController" customModule="SukimaTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -452,7 +452,7 @@
                         <viewLayoutGuide key="safeArea" id="hfv-SU-Gsg"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Suggest" id="F8y-xo-ZHF"/>
+                    <navigationItem key="navigationItem" title="ToDo提案" id="F8y-xo-ZHF"/>
                     <connections>
                         <segue destination="ejF-KA-HMV" kind="show" identifier="Run" id="2ti-oY-YJh"/>
                     </connections>
@@ -461,7 +461,7 @@
             </objects>
             <point key="canvasLocation" x="2676.811594202899" y="93.75"/>
         </scene>
-        <!--Run-->
+        <!--ToDo実行-->
         <scene sceneID="PDf-49-bHC">
             <objects>
                 <viewController storyboardIdentifier="RunViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ejF-KA-HMV" customClass="RunViewController" customModule="SukimaTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -481,7 +481,7 @@
                         <viewLayoutGuide key="safeArea" id="Tev-mc-Rmi"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Run" id="QFq-Kb-z6u"/>
+                    <navigationItem key="navigationItem" title="ToDo実行" id="QFq-Kb-z6u"/>
                     <connections>
                         <outlet property="endButton" destination="KHd-lt-W8v" id="y51-X1-Czi"/>
                     </connections>
@@ -490,7 +490,7 @@
             </objects>
             <point key="canvasLocation" x="3360.8695652173915" y="93.75"/>
         </scene>
-        <!--End-->
+        <!--実行終了-->
         <scene sceneID="RwA-qh-UP3">
             <objects>
                 <viewController storyboardIdentifier="EndView" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aQu-5X-eJa" customClass="EndViewController" customModule="SukimaTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -601,7 +601,7 @@
                             <constraint firstItem="7O5-1h-fGb" firstAttribute="top" secondItem="B3R-Ew-YNY" secondAttribute="top" constant="48" id="uD9-F8-DcJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="End" id="2Zg-ZR-aBf"/>
+                    <navigationItem key="navigationItem" title="実行終了" id="2Zg-ZR-aBf"/>
                     <connections>
                         <outlet property="card" destination="7O5-1h-fGb" id="JkC-uO-voP"/>
                         <outlet property="dateLabel" destination="wOc-ld-jNG" id="wQL-c3-9Al"/>
@@ -634,11 +634,11 @@
             </objects>
             <point key="canvasLocation" x="480" y="94"/>
         </scene>
-        <!--Select-->
+        <!--提案-->
         <scene sceneID="FCN-Kv-4RK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="36b-3R-WhF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Select" image="square.grid.2x2.fill" catalog="system" id="D4s-my-ZGx"/>
+                    <tabBarItem key="tabBarItem" title="提案" image="square.grid.2x2.fill" catalog="system" id="D4s-my-ZGx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fbd-WW-Cmm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

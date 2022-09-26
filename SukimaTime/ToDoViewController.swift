@@ -34,6 +34,9 @@ class ToDoViewController: UIViewController, UIAdaptivePresentationControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+
+        
         card.layer.cornerRadius = 10.0
         card.layer.shadowOffset = CGSize(width: 0, height: 0)
         card.layer.shadowRadius = 10.0

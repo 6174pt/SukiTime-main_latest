@@ -90,7 +90,7 @@ class CarouselCell: UICollectionViewCell {
         
         // 日付タイトル
         datetitleLabel = UILabel()
-        datetitleLabel.text = "Date"
+        datetitleLabel.text = "期限"
         datetitleLabel.frame = CGRect(x:margin,
                                   y:margin * 11,
                                   width:width - margin * 2,
@@ -117,7 +117,7 @@ class CarouselCell: UICollectionViewCell {
                                   height:50)
         decide.backgroundColor = UIColor(named: "Blue2")
         decide.setTitleColor(UIColor.white, for: UIControl.State.normal)
-        decide.setTitle("Decide", for: .normal)
+        decide.setTitle("実行", for: .normal)
         decide.layer.borderWidth = 4  // 5
         decide.layer.borderColor = UIColor(named: "Blue2")?.cgColor
  
